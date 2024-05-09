@@ -57,4 +57,11 @@ The following is a flowchart of the tech used in the backend.
 <img width="1091" alt="Screenshot 2024-05-09 at 12 10 47 PM" src="https://github.com/FarisAI24/Speech-to-speech-RAG-AI-App/assets/129112288/862bc270-ca94-4fe7-8f3f-2f8b77933f13">
 
 ## Screenshots
+#### Light Mode
+<img width="1499" alt="Screenshot 2024-05-09 at 5 28 53 PM" src="https://github.com/FarisAI24/Speech-to-speech-RAG-AI-App/assets/129112288/b6b36c02-15e7-4825-8bd4-1155b8736ac7">
+
+#### Dark Mode
+<img width="1496" alt="Screenshot 2024-05-09 at 5 29 04 PM" src="https://github.com/FarisAI24/Speech-to-speech-RAG-AI-App/assets/129112288/88cb8047-59c0-45ad-a565-ddf3c64d8b62">
+
+
 
