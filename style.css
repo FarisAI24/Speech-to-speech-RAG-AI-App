@@ -43,8 +43,6 @@ i{
   width: auto;
   min-width: 500px;
   max-width: 500px;
-  min-height: 150px;
-  max-height: 300px;
   overflow-x: visible;
   overflow-y:visible ;
 }
@@ -136,6 +134,15 @@ p {
     background-color: #101010; /* Same as the body background */
   }
  
+
+  .input{
+    height: 75px; /* height of input*/
+  }
+  .output{
+    min-height: 150px;
+    max-height: 300px;
+  
+  }
 
   .dlilk {
     font-size: 20px;  /* Icon size */

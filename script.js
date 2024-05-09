@@ -1,5 +1,4 @@
 document.addEventListener('DOMContentLoaded', function() {
-    // Initialize the sound wave in a stopped state on page load
     var soundWave = document.querySelector('.sound-wave');
     if (!soundWave) {
         console.error('No sound wave element found!');
@@ -24,7 +23,7 @@ document.addEventListener('keydown', function(event) {
                 return;
             }
             bars.forEach(bar => {
-                bar.style.animation = ''; // Clear any inline animation styles
+                bar.style.animation = '';
             });
             startRecording();
         } else {
@@ -47,7 +46,7 @@ document.addEventListener('keydown', function(event) {
 });
 
 function startRecording() {
-    fetch('/record_audio', {
+    fetch('http://127.0.0.1:5000/record_audio', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -68,7 +67,7 @@ function startRecording() {
 }
 
 function transcribeAudio(audioData) {
-    fetch('/transcribe_audio', {
+    fetch('http://127.0.0.1:5000/transcribe_audio', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -85,7 +84,7 @@ function transcribeAudio(audioData) {
 }
 
 function respond(transcribedText) {
-    fetch('/respond', {
+    fetch('http://127.0.0.1:5000/respond', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
@@ -102,7 +101,7 @@ function respond(transcribedText) {
 }
 
 function textToSpeech(responseText) {
-    fetch('/text_to_speech', {
+    fetch('http://127.0.0.1:5000/text_to_speech', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json',
